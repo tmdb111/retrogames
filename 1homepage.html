@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Retro Games</title>
+<link rel="stylesheet" href="styles.css" type="text/css">
+<link rel="icon" type="image/x-icon" href="Files/favicon.ico">
+
+<style>
+.header {
+  background-image: url(Files/homepageheader.png);
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  padding-top: 30px;
+}
+
+.hero {
+    background: linear-gradient(to right, #000000, #252525);
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+b {
+  color: #000000;
+ }
+
+.parallax {
+  height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  margin: 20px auto;
+  border-radius: 14px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.35); 
+  transition: transform 0.1s ease-out;
+}
+
+.parallax-one {
+  background-image: url("Files/images/retrogames.png");
+}
+
+.parallax-two {
+  background-image: url("Files/images/retroconsoles.png");
+}
+
+.parallax-three {
+  background-image: url("Files/images/soundtracks.png");
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Retro Games</h1>
+</div>
+
+<div class="navbar">
+    <a href="1homepage.html"><b>Home</b></a>
+    <a href="2nintendo.html">Nintendo</a>
+    <a href="3xbox.html">Xbox</a>
+    <a href="4playstation.html">Playstation</a>
+    <a href="5request.html" class="right">Requests</a>
+</div>
+
+
+<div class="hero">
+       <h1>Home Page</h1>
+</div>
+
+<button class="accordion">What is Retro Gaming?</button>
+<div class="panel">
+  <p style="text-align:center">Retro gaming, also known as classic gaming and old school gaming, is the playing and collection of personal computers, consoles, and video games from earlier decades, several websites and online forums are devoted to retro gaming. The content on these online platforms typically includes reviews of older games, interviews with developers, fan-made content, game walkthroughs, and message boards for discussions.<a href="https://en.wikipedia.org/wiki/Retro_gaming" target="_blank"><p style="text-align:center">Read More</a>
+</div>
+
+<section class="content-box">
+    <h3>Top 5 Most Influential Retro Games</h3>
+    <ul>
+        <li>
+            <strong>Super Mario Bros. (1986)</strong><br>
+            Redefined side-scrolling platformers and helped revive the gaming industry.
+        </li>
+        <li>
+            <strong>The Legend of Zelda (1986)</strong><br>
+            Introduced open-world exploration and save-game features that shaped modern adventure games.
+        </li>
+        <li>
+            <strong>Tetris (1984)</strong><br>
+            A timeless puzzle game that became a global phenomenon across countless platforms.
+        </li>
+        <li>
+            <strong>Street Fighter II (1991)</strong><br>
+            Pioneered competitive fighting games and established character-based movesets.
+        </li>
+        <li>
+            <strong>DOOM (1993)</strong><br>
+            A groundbreaking first-person shooter that set the template for modern FPS design.
+        </li>
+    </ul>
+    <div class="parallax parallax-one"></div>
+
+</section>
+
+<section class="content-box">
+    <h3> Retro Hidden Gems</h3>
+    <ul>
+        <li>
+            <strong>EarthBound (1994)</strong><br>
+            A quirky RPG with humour, heart, and a huge cult following today.
+        </li>
+        <li>
+            <strong>Gunstar Heroes (1993)</strong><br>
+            A fast, chaotic run and gun with some of the best action gameplay on the Mega Drive.
+        </li>
+        <li>
+            <strong>Terranigma (1995)</strong><br>
+            A beautiful, emotionally rich action RPG that never officially released in North America.
+        </li>
+        <li>
+            <strong>Klonoa: Door to Phantomile (1997)</strong><br>
+            A charming platformer with a surprisingly deep story.
+        </li>
+        <li>
+            <strong>Power Stone (1999)</strong><br>
+            An arena fighter with wild items, dynamic stages, and fun multiplayer.
+        </li>
+    </ul>
+    <div class="parallax parallax-two"></div>
+</section>
+
+<section class="content-box">
+    <h3>Best Retro Soundtracks</h3>
+    <ul>
+        <li>
+            <strong>Super Mario Bros. (1985)</strong><br>
+            Iconic themes that influenced the music of the entire mario bros series.
+        </li>
+        <li>
+            <strong>Chrono Trigger (1995)</strong><br>
+            Emotional melodies that remain some of the most loved in gaming.
+        </li>
+        <li>
+            <strong>Sonic the Hedgehog 2 (1992)</strong><br>
+            Upbeat tracks like “Chemical Plant Zone” that defined platforming.
+        </li>
+        <li>
+            <strong>Final Fantasy VI (1994)</strong><br>
+            An orchestral soundtrack with emotional range.
+        </li>
+        <li>
+            <strong>The Legend of Zelda: A Link to the Past (1991)</strong><br>
+            Iconic themes that influenced the musical direction of the entire Zelda series.
+        </li>
+    </ul>
+    <video class="retro-video" width="450" height="400" controls>
+    <source src="Files/videos/Super Mario Bros (NES) Music - Overworld Theme .mp4" type="video/mp4">
+</section>
+
+<footer>
+  <p>Retro Games - TMDB<br>
+</footer>
+
+<script>
+document.querySelector(".accordion").addEventListener("click", function () {
+  this.classList.toggle("active");
+  const panel = this.nextElementSibling;
+  panel.style.display = panel.style.display === "block" ? "none" : "block";
+});
+</script>
+</body>
+</html>
